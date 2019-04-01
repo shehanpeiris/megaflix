@@ -39,7 +39,7 @@ $(document).ready(function() {
     }).then(function(response) {
       var genreMovies = response;
       for (let i = 0; i < 4; i++) {
-        var queryURL = "http://www.omdbapi.com/?t=" + genreMovies[i].title + "&y=" + genreMovies[i].year + "&apikey=7144e1fa";
+        var queryURL = "https://www.omdbapi.com/?t=" + genreMovies[i].title + "&y=" + genreMovies[i].year + "&apikey=7144e1fa";
         $.ajax({
           url: queryURL,
           method: "GET"
